@@ -82,6 +82,37 @@
                 height: 100%; 
                 overflow-y: auto; /* Allows scrolling if content overflows */
             }
+			/* Media query for mobile screens */
+        @media (max-width: 768px) {
+            .product-info {
+                width: 100%; /* Full width on smaller screens */
+                height: auto; /* Allow the height to adjust based on content */
+                padding: 20px; /* Reduce padding on mobile for better fit */
+                margin: 20px; /* Reduce margin for mobile */
+            }
+
+            .product-info h1 {
+                font-size: 1.8em; /* Adjust the font size for smaller screens */
+                padding-top: 10px; /* Reduce padding on top */
+            }
+
+            .info-item {
+                font-size: 1em; /* Adjust font size for smaller screens */
+            }
+
+            .info-item label {
+                width: 35%; /* Adjust label width for better fit */
+            }
+
+            .info-item .colon {
+                display: none; /* Hide colon on smaller screens */
+            }
+
+            .info-item .value {
+                flex: 1; 
+                padding-left: 5px; /* Reduce padding for better fit */
+            }
+			}
         </style>
     </head>
     <body>
